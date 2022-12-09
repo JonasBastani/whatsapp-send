@@ -69,4 +69,8 @@ export class HomePage {
     this.data.save = this.data.save ? false: true;
   }
 
+  redrectDev(){
+    window.open('https://www.linkedin.com/in/jonas-bastani/', '_blank');
+  }
+
 }
