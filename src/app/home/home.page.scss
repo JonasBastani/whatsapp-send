@@ -86,6 +86,10 @@ label{
   background: url(../../assets/img/wpp_paper.jpg) !important;
 }
 
+ion-content{
+  --background: url(../../assets/img/wpp_paper.jpg) !important;
+}
+
 .area_message{
   min-height: 150px;
 }

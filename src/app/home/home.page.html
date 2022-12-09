@@ -7,10 +7,10 @@
   </div>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <div class="body">
     <div class="container">
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-12">
         <div class="top_body">
           <ion-icon name="logo-whatsapp"></ion-icon>
         </div>
@@ -27,7 +27,7 @@
           <div class="check-save mb-3">
             <label class="label-check">Salvar mensagem para envios futuros</label>
             <label class="toggler-wrapper style-1">
-              <input type="checkbox">
+              <input [checked]="data.save" (change)="changeSave()" type="checkbox">
               <div class="toggler-slider">
                 <div class="toggler-knob"></div>
               </div>
