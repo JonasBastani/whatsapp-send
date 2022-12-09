@@ -1,0 +1,42 @@
+<ion-header class="ion-no-padding">
+  <div class="header">
+    <div class="title">
+      <h4>Whatsapp Chat Init</h4>
+    </div>
+    <ion-icon name="logo-whatsapp"></ion-icon>
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div class="container">
+      <div class="col-lg-6">
+        <div class="top_body">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </div>
+        <div class="center_body">
+          <div class="mb-3 mt-4">
+            <label for="exampleInputEmail1" class="form-label">NÚMERO</label>
+            <input [(ngModel)]="data.number" mask="+00 (00) 00000-0000" placeholder="+00 (00) 00000-0000" type="text" class="form-control">
+            <span *ngIf="valid" class="sp-erro">{{valid}}</span>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">SUA MENSAGEM</label>
+            <textarea [(ngModel)]="data.message" placeholder="Descreva a mensagem que deseja enviar" type="text" class="form-control area_message"></textarea>
+          </div>
+          <div class="check-save mb-3">
+            <label class="label-check">Salvar mensagem para envios futuros</label>
+            <label class="toggler-wrapper style-1">
+              <input type="checkbox">
+              <div class="toggler-slider">
+                <div class="toggler-knob"></div>
+              </div>
+            </label>
+
+          </div>
+          <button (click)="send()" class="btn-send">ENVIAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

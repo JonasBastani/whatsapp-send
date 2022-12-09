@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "whatsapp-send",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
